@@ -1,10 +1,10 @@
 # Schema Builder
 
-A Laravel inspired schema builder for Harness Flex and DB Migrate.
+A Laravel inspired schema builder for Formidable and DB Migrate.
 
-![Status](https://github.com/harnessflex/schema-builder/actions/workflows/test.yml/badge.svg)
-![npm](https://img.shields.io/npm/v/@harnessflex/schema-builder)
-![GitHub](https://img.shields.io/github/license/harnessflex/schema-builder)
+![Status](https://github.com/formidablejs/schema-builder/actions/workflows/test.yml/badge.svg)
+![npm](https://img.shields.io/npm/v/@formidablejs/schema-builder)
+![GitHub](https://img.shields.io/github/license/formidablejs/schema-builder)
 
 Install
 -------
@@ -12,7 +12,7 @@ Install
 This package is automatically installed with the Harness Flex Framework.
 
 ```
-npm i @harnessflex/schema-builder
+npm i @formidablejs/schema-builder
 ```
 
 Basic Usage
@@ -23,7 +23,7 @@ Schema Builder works on both `JavaScript` based projects and `imba` based projec
 ### JavaScript
 
 ```js
-const { columns, id, foreign, string, longText, timestamps, softDeletes, timestamp } = require('@harnessflex/schema-builder')
+const { columns, id, foreign, string, longText, timestamps, softDeletes, timestamp } = require('@formidablejs/schema-builder')
 
 exports.up = function (db) {
     return db.createTable('posts', columns([
@@ -43,7 +43,7 @@ exports.up = function (db) {
 
 
 ```js
-const { columns, id, foreign, string, longText, timestamps, softDeletes, timestamp } = require '@harnessflex/schema-builder'
+const { columns, id, foreign, string, longText, timestamps, softDeletes, timestamp } = require '@formidablejs/schema-builder'
 
 exports.up = do(db)
     db.createTable 'posts', columns [
@@ -64,7 +64,7 @@ Modifying Tables
 To add a new `column` to an existing table, use the `add` helper method:
 
 ```js
-const { string, add } = require('@harnessflex/schema-builder')
+const { string, add } = require('@formidablejs/schema-builder')
 
 ...
 
@@ -78,7 +78,7 @@ exports.up = function (db) {
 And to change a column in an existing table, use the `change` helper method:
 
 ```js
-const { change, longText } = require('@harnessflex/schema-builder')
+const { change, longText } = require('@formidablejs/schema-builder')
 
 ...
 
