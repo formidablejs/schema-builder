@@ -6,7 +6,7 @@ declare class Column {
     /**
      * Add column after another column.
      *
-     * @param {string} column column name
+     * @param {String} column column name
      * @returns {Column}
      */
     after(column: string): Column;
@@ -55,7 +55,7 @@ declare class Column {
     /**
      * Set column default value.
      *
-     * @param {Number|string|boolean} value
+     * @param {Number|String|boolean} value
      * @returns {Column}
      */
     default(value: number | string | boolean): Column;

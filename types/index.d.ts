@@ -1,3 +1,5 @@
+import add = require("./add");
+import bigIncrements = require("./defaults/bigIncrements");
 import bigInteger = require("./defaults/bigInteger");
 import binary = require("./defaults/binary");
 import blob = require("./defaults/blob");
@@ -20,9 +22,8 @@ import text = require("./defaults/text");
 import time = require("./defaults/time");
 import timestamp = require("./defaults/timestamp");
 import timestamps = require("./defaults/timestamps");
-import add = require("./add");
 import change = require("./change");
 import ChangeColumn = require("./ChangeColumn");
 import schema = require("./schema");
 import softDeletes = require("./defaults/softDeletes");
-export { bigInteger, binary, blob, boolean, char, Column, columns, date, dateTime, decimal, foreign, ForeignColumn, id, integer, longText, real, smallInteger, string, text, time, timestamp, timestamps, add, change, ChangeColumn, schema, softDeletes };
+export { add, bigIncrements, bigInteger, binary, blob, boolean, char, Column, columns, date, dateTime, decimal, foreign, ForeignColumn, id, integer, longText, real, smallInteger, string, text, time, timestamp, timestamps, change, ChangeColumn, schema, softDeletes };

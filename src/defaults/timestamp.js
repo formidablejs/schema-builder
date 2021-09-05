@@ -7,7 +7,9 @@ const Column = require('../Column')
  * @returns {Column}
  */
 const timestamp = (name) => {
-	return new Column(name, 'timestamp')
+	const column = new Column(name, 'timestamp')
+
+    return column
 }
 
 module.exports = timestamp

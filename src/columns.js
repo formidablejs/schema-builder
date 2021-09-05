@@ -4,7 +4,7 @@ const ForeignColumn = require('./ForeignColumn')
 /**
  * Get all columns.
  *
- * @param {Column[]|ForeignColumn[]} all
+ * @param {Column[]|ForeignColumn[]|Object[]} all
  * @returns {object} results
  */
 const columns = (all, results = {}) => {

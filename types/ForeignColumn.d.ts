@@ -5,28 +5,28 @@ declare class ForeignColumn {
     /**
      * Reference column of another table.
      *
-     * @param {string} column
+     * @param {String} column
      * @returns {ForeignColumn}
      */
     references(column?: string): ForeignColumn;
     /**
      * Reference table.
      *
-     * @param {string} table
+     * @param {String} table
      * @returns {ForeignColumn}
      */
     on(table: string): ForeignColumn;
     /**
      * Add onDelete rule.
      *
-     * @param {string} rule
+     * @param {String} rule
      * @returns {ForeignColumn}
      */
     onDelete(rule: string): ForeignColumn;
     /**
      * Add onUpdate rule.
      *
-     * @param {string} rule
+     * @param {String} rule
      * @returns {ForeignColumn}
      */
     onUpdate(rule: string): ForeignColumn;

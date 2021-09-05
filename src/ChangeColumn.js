@@ -5,7 +5,7 @@ const ForeignColumn = require('./ForeignColumn')
 class ChangeColumn {
     /**
      * @param {Column|ForeignColumn} column
-     * @param {string} type
+     * @param {String} type
      * @throws {Error}
      * @throws {TypeError}
      */
@@ -29,7 +29,7 @@ class ChangeColumn {
     /**
      * Set table name.
      *
-     * @param {string} table table name
+     * @param {String} table table name
      * @throws {TypeError}
      * @returns {ChangeColumn}
      */
@@ -46,7 +46,7 @@ class ChangeColumn {
     /**
      * Set table name.
      *
-     * @param {string} table
+     * @param {String} table
      * @throws {TypeError}
      * @returns {ChangeColumn}
      */

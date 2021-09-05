@@ -2,7 +2,7 @@ export = ChangeColumn;
 declare class ChangeColumn {
     /**
      * @param {Column|ForeignColumn} column
-     * @param {string} type
+     * @param {String} type
      * @throws {Error}
      * @throws {TypeError}
      */
@@ -12,7 +12,7 @@ declare class ChangeColumn {
     /**
      * Set table name.
      *
-     * @param {string} table table name
+     * @param {String} table table name
      * @throws {TypeError}
      * @returns {ChangeColumn}
      */
@@ -21,7 +21,7 @@ declare class ChangeColumn {
     /**
      * Set table name.
      *
-     * @param {string} table
+     * @param {String} table
      * @throws {TypeError}
      * @returns {ChangeColumn}
      */
