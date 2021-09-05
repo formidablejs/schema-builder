@@ -1,11 +1,11 @@
 {
-    "name": "@harnessflex/schema-builder",
-    "version": "0.0.6",
+    "name": "@formidablejs/schema-builder",
+    "version": "0.0.1-rc1",
     "description": "A Eloquent inspired schema builder for Harness Flex and DB Migrate.",
     "main": "src/index.js",
     "module": "src/index.js",
     "types": "types/index.d.ts",
-    "repository": "github:harnessflex/schema-builder",
+    "repository": "github:formidablejs/schema-builder",
     "keywords": [
         "harness",
         "harness flex",
@@ -17,7 +17,8 @@
         "eloquent"
     ],
     "files": [
-        "src"
+        "src",
+        "types"
     ],
     "scripts": {
         "ts:build": "tsc",
