@@ -1,14 +1,14 @@
 'use strict';
 
 const {
-    columns,
     id,
     foreign,
     string,
     longText,
     timestamps,
     softDeletes,
-    timestamp
+    timestamp,
+    schema
 } = require("../../src");
 
 var dbm;
@@ -26,7 +26,7 @@ exports.setup = function (options, seedLink) {
 };
 
 exports.up = function (db) {
-    return db.createTable('posts', columns([
+    return db.createTable('posts', schema([
         id(),
         foreign('user_id').references('id').on('users').onDelete('cascade'),
         string('title'),

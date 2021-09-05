@@ -1,11 +1,11 @@
 'use strict';
 
 const {
-    columns,
     id,
     string,
     timestamp,
-    timestamps
+    timestamps,
+    schema
 } = require("../../src");
 
 var dbm;
@@ -23,7 +23,7 @@ exports.setup = function (options, seedLink) {
 };
 
 exports.up = function (db) {
-    return db.createTable('users', columns([
+    return db.createTable('users', schema([
         id(),
         string('name'),
         string('email').unique(),
