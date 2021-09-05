@@ -1,7 +1,7 @@
 {
     "name": "@formidablejs/schema-builder",
     "version": "0.0.1-rc1",
-    "description": "A Eloquent inspired schema builder for Harness Flex and DB Migrate.",
+    "description": "A Eloquent inspired schema builder for Formidable and DB Migrate.",
     "main": "src/index.js",
     "module": "src/index.js",
     "types": "types/index.d.ts",
