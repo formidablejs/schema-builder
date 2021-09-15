@@ -9,6 +9,7 @@ const ChangeColumn = require('./ChangeColumn')
 const char = require('./defaults/char')
 const Column = require('./Column')
 const columns = require('./columns')
+const currentTimestamp = require('./currentTimestamp')
 const date = require('./defaults/date')
 const dateTime = require('./defaults/dateTime')
 const decimal = require('./defaults/decimal')
@@ -34,9 +35,12 @@ module.exports = {
     binary,
     blob,
     boolean,
+    change,
+    ChangeColumn,
     char,
     Column,
     columns,
+    currentTimestamp,
     date,
     dateTime,
     decimal,
@@ -46,15 +50,12 @@ module.exports = {
     integer,
     longText,
     real,
+    schema,
     smallInteger,
+    softDeletes,
     string,
     text,
     time,
     timestamp,
     timestamps,
-    add,
-    change,
-    ChangeColumn,
-    schema,
-    softDeletes,
 }
