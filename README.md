@@ -122,12 +122,13 @@ Column          | Params                      | Type            | Unique Constra
 
 Other
 -----
-Method    | Params                            | Description
-:---------|:----------------------------------|:-----------------------------
-`add`     | `column: Column or ForeignColumn` | Add a new column to an existing table.
-`change`  | `column: Column or ForeignColumn` | Change a column in an existing table.
-`columns` | `columns: array`                  | A collection of columns.
-`schema`  | `columns: array`                  | A collection of columns.
+Method             | Params                            | Description
+:------------------|:----------------------------------|:---------------------------------------------
+`add`              | `column: Column or ForeignColumn` | Add a new column to an existing table.
+`change`           | `column: Column or ForeignColumn` | Change a column in an existing table.
+`columns`          | `columns: array`                  | A collection of columns.
+`schema`           | `columns: array`                  | A collection of columns.
+`currentTimestamp` |                                   | A helper that returns the current timestamp.
 
 <br/>
 
